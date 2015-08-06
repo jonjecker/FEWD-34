@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Product Page</title>
+    <style media="screen">
+      body{
+        background-image: url(http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png);
+                font-family: arial;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+      Products
+      </h1>
+      <p>
+        For a complete list of products, please visit The Original Illustrated Catalogue of ACME Products.
+      </p>
+      <ol>
+        <li>Details</li>
+        <li>Add to Cart</li>
+      </ol>
+      <p>
+        Due to its highly volatile and explosive nature, do not ignite ACME Blasting Powder until you are in a safe location.
+      </p>
+      <ol>
+        <li>Details</li>
+        <li>Add to Cart</li>
+      </ol>
+      <p>
+        ACME Hair Grower (patented) is guaranteed to make short hair long in a flash.
+      </p>
+      <ol>
+        <li>Details</li>
+        <li>Add to Cart</li>
+      </ol>
+      <p>
+        Another item in the Acme Jet Propelled Line of products is the Acme jet propelled Unicycle, which even the most unbalanced individual can ride with ease.
+      </p>
+      <ol>
+        <li>Details</li>
+        <li>Add to Cart</li>
+      </ol>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>
