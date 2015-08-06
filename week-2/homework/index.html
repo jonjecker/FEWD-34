@@ -8,8 +8,8 @@
       hr{
         border-style:inset;
         margin: 9px auto;
-        width: 695px;
-        color: rgba(0, 0, 0, 0.2);
+        max-width: 575px;
+        color: rgba(0, 0, 0, 0.5);
       }
       body{
         background-image: url(http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png);
@@ -21,25 +21,29 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
         border-top: 1px solid rgba(0, 0, 0, 0.3);
         box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.2);
-        margin: -8px -8px auto;
+        margin: -6px -6px auto;
 
         }
         ol {
-          display: inline;
-          text-align: right;
-        }
-        li {
             display: inline;
             text-align: right;
-            line-height: 75px;
+            line-height: 41px;
             color:white;
             text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+            float: right
         }
-        ol:last-child {
+        li {
+          display: inline;
+          text-align: right;
+          margin: 20px;
+        }
+        li:last-child {
           border-color: black;
           border-radius: 5px;
           padding: 10px 32px;
-          background-color: rgb(59, 80, 171);;
+          background-color: rgb(59, 80, 171);
+          display: inline;
+          text-align: right;
         }
         main {
           margin-left: auto;
@@ -74,8 +78,6 @@
         <img src="http://cloud.avandamiri.com/image/423B1n2p2v0U/acme-corp.jpg" alt="Acme Corp Logo" width="275px" />
         <ol>
           <li> Products</li>
-        </ol>
-        <ol>
           <li> Sign Up</li>
         </ol>
     </header>
