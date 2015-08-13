@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Product Page</title>
+    <link rel="stylesheet" href="stylesheet.css" media="all" title="no title" charset="utf-8">
     <style media="screen">
       body{
         background-image: url(http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png);

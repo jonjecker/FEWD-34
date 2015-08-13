@@ -3,32 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Product Page</title>
+    <link rel="stylesheet" href="stylesheet.css" media="all" title="no title" charset="utf-8">
     <style media="screen">
-      body{
-        background-image: url(http://cloud.avandamiri.com/image/3N410e2Q2Z3F/background.png);
-                font-family: arial;
-      }
-      main{
-        background-color: white;
-        border-radius: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 575px;
-        padding: 6px 25px 40px 25px;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        position: relative;
-        background-color: white;
-        border-radius: 6px;
-        box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.2);
-        overflow: auto;
-      }
-      ol {
-        display: inline;
-        text-align: right;
-        overflow: auto;
-      }
-      li{
+
+      li.prod_buttons{
         display:inline;
         border-radius: 5px;
         border-style: solid;
@@ -39,7 +17,7 @@
         color: blue;
         overflow: auto;
       }
-      li:last-child {
+      li.prod_buttons:last-child {
         background-color: blue;
         color: white;
       }
@@ -47,6 +25,16 @@
     </style>
   </head>
   <body>
+    <header>
+      <img src="acme-corp.jpg" alt="Acme corp logo" width="275px" />
+    <nav>
+      <ol>
+        <li>About Acme Corp</li>
+        <li>Products</li>
+        <li>Sign Up</li>
+      </ol>
+    </nav>
+    </header>
     <main>
       <h1>
       Products
@@ -59,28 +47,31 @@
       </p>
       <img src="http://acme.com/catalog/blasting.jpg" alt="Blasting Powder" />
       <ol>
-        <li>Details</li>
-        <li>Add to Cart</li>
+        <li class="prod_buttons">Details</li>
+        <li class="prod_buttons">Add to Cart</li>
       </ol>
       <p>
         ACME Hair Grower (patented) is guaranteed to make short hair long in a flash.
       </p>
       <img src="http://acme.com/catalog/hair.jpg" alt="Hair Grower" />
       <ol>
-        <li>Details</li>
-        <li>Add to Cart</li>
+        <li class="prod_buttons">Details</li>
+        <li class="prod_buttons">Add to Cart</li>
       </ol>
       <p>
         Another item in the Acme Jet Propelled Line of products is the Acme jet propelled Unicycle, which even the most unbalanced individual can ride with ease.
       </p>
       <img src="http://acme.com/catalog/jetuni.jpg" alt="Jet-Propelled Unicycle" />
       <ol>
-        <li>Details</li>
-        <li>Add to Cart</li>
+        <li class="prod_buttons">Details</li>
+        <li class="prod_buttons">Add to Cart</li>
       </ol>
     </main>
-    <footer>
 
+    <footer>
+    <hr>
+    Copyright, 2015
     </footer>
+      </body>
   </body>
 </html>
