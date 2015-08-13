@@ -8,9 +8,6 @@ header {
   border-bottom: 1px solid rgba(0,0,0,0.25);
   overflow: auto;
 }
-td {
-  padding: 20px;
-}
 nav{
   float: right;
   list-style: none;
@@ -32,13 +29,18 @@ li:last-child {
 }
 main {
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 50px auto;
   background: white;
-  border: 1px;
-  max-width: 800px;
+  border: .5px;
+  box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.2);
+  max-width: 950px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 20px 20px 20px;
+  padding: 15px 20px 15px 25px;
+}
+p {
+  margin: 10px auto 3px 0px;
+}
 
 }
 footer{
@@ -51,3 +53,16 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
+.main-signup {
+    padding: 0px 25px 0px 0px;
+}
+  input{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    margin: 8px 10px;
+    padding: 5px 100px 5px 2px;
+  }
+
+  button {
+    margin: 20px 0px;
+  }
