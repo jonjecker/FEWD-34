@@ -65,3 +65,22 @@ hr {
   button {
     margin: 20px 0px;
   }
+
+li.prod_buttons{
+          display:inline;
+          border-radius: 5px;
+          border-style: solid;
+          border-color: blue;
+          border-width: 1px;
+          background-color: white;
+          padding: 4.5px;
+          color: blue;
+          overflow: auto;
+        }
+li.prod_buttons:last-child {
+          background-color: blue;
+          color: white;
+        }
+img.product_imgs {
+          width:220px;
+        }
