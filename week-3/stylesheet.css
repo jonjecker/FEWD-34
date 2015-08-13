@@ -40,6 +40,7 @@ main {
 }
 p {
   margin: 10px auto 3px 0px;
+  font-size: 18px;
 }
 
 footer{
@@ -83,4 +84,15 @@ li.prod_buttons:last-child {
         }
 img.product_imgs {
           width:220px;
+          float: left;
         }
+.products{
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  margin:35px;
+}
+.product_description{
+  max-width: 600px;
+  margin-left: 20px;
+}
