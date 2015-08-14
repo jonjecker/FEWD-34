@@ -82,6 +82,10 @@ li.prod_buttons:last-child {
           background-color: blue;
           color: white;
         }
+a{
+  text-decoration: none;
+  color: white;
+}
 img.product_imgs {
           width:220px;
           float: left;
