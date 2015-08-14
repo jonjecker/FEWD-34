@@ -1,6 +1,6 @@
 
 
-function  sayhello(name){
+function  sayHello(name){
   var greeting="hello" + name;
   return greeting;
 }
