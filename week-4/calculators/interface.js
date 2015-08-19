@@ -6,13 +6,17 @@ pyA.addEventListener('keyup', calcPy);
 pyB.addEventListener('keyup', calcPy);
 
 function calcPy(event) {
-  if (pyA.value.length > 0 && pyB.value.length > 0) {
-    pyC.value = calcLongestSide(pyA.value, pyB.value)
-  } else {
-    pyC.value = '';
-  }
+          if (pyA.value.length > 0 && pyB.value.length > 0) {
+            pyC.value = calcLongestSide(pyA.value, pyB.value)
+          } else {
+            pyC.value = '';
+          }
 }
 
+function calcLongestSide (pyA, pyB) {
+  var pyC = Math.sqrt((pyA*pyA)+(pyB*pyB));
+  return pyC;
+}
 
 
 
