@@ -13,10 +13,10 @@ function calcPy(event) {
           }
 }
 
-function calcLongestSide (pyA, pyB) {
-  var pyC = Math.sqrt((pyA*pyA)+(pyB*pyB));
-  return pyC;
-}
+// function calcLongestSide (pyA, pyB) {
+//   var pyC = Math.sqrt((pyA*pyA)+(pyB*pyB));
+//   return pyC;
+// }
 
 
 
@@ -35,7 +35,10 @@ function calcC(event) {
   }
 }
 
-
+// function calcCircumference (r) {
+//   var c= (2 * Math.PI * r);
+//   return c;
+// }
 
 
 
@@ -55,6 +58,12 @@ function calcFtoC(event) {
   }
 }
 
+// function calcFahrenheitToCelcius (tempF,tempC) {
+//   var tempC = (tempF - 32) * 5/9;
+//   return tempC;
+// };
+
+
 function calcCtoF(event) {
   if (tempC.value.length > 0) {
     tempF.value = calcCelciusToFarenheit(tempC.value)
@@ -62,3 +71,8 @@ function calcCtoF(event) {
     tempF.value = '';
   }
 }
+//
+// function calcCelciusToFarenheit(tempC,tempF) {
+//   var tempF =  ((tempC * (9/5)) + 32);
+//   return tempF;
+// };
