@@ -24,7 +24,19 @@ body { font-family: sans-serif; }
 
   <script>
     function addListItem() {
-      // Your code goes here.
+      // 1. Prompt for a todo and save the result---> var text = prompt("What do you need to do today?")
+      // 2. Create an li element --> document.createElement ()
+      // 3. Save the ul in a variable --> var list = ?
+      // 4. Append the li to the ul variable --> list.appendChild()
+      // 5. Set the prompt result to the li's textcontent ---> li.textContent = text
+
+      var text = prompt("What do you need to do today?");
+      var list = document.querySelector("#todo-list")
+      var listItem= document.createElement("li");
+
+      list.textContent = text;
+
+      list.appendChild("listItem");
     }
   </script>
 </div>
