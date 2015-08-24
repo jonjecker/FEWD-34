@@ -58,6 +58,23 @@ body { font-family: sans-serif; }
 
   <script>
   function addImage() {
+    // 1.button is clicked
+    // 2. prompt for an image source, width, and height.
+    // 3. Create an <img>
+    // 4. set the respective attributes
+    // 5. put it in this box:
+    var imageSource = prompt("Please enter image source");
+    var imageWidth = prompt("Please enter image width");
+    var imageHeight = prompt("Please enter image height");
+    var imageLocation = document.querySelector("#image");
+    var imageAdd = document.createElement("img");
+
+
+    imageAdd.src = imageSource;
+    imageAdd.width = imageWidth;
+    imageAdd.height = imageHeight;
+    imageLocation.appendChild(imageAdd);
+
 
   }
   </script>
