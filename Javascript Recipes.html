@@ -13,6 +13,22 @@ js-recipies.html
   var el = document.createElement("img");
   el.setAttribute("src","http://example.com/logo.png");
 
-  // 
+  // Adding an element to the page with text content
+  var name = "li";
+  var text = "Go grocery shopping";
+  var parent = "ul"
+
+  var el = document.createElement("li")
+  el.textcontent = "Go grocery shopping..."
+  var parentEl = document.querySelector(parent);
+  parentEl.appendChild(el);
+
+  function addElement (name, parent, text) {
+    var el = document.createElement (name);
+    el.textcontent = text;
+    var parentEl = document.querySelector(parent)
+    parentEl.appendChild(el);
+   }
+    
 
 </script>
