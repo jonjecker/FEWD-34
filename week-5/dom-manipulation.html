@@ -70,7 +70,7 @@ body { font-family: sans-serif; }
     var imageAdd = document.createElement("img");
 
 
-    imageAdd.src = imageSource;
+    imageAdd.setAttribute("src", imageSource);
     imageAdd.setAttribute("height",imageHeight);
     imageAdd.setAttribute("width",imageWidth);
     imageLocation.appendChild(imageAdd);
@@ -96,7 +96,11 @@ body { font-family: sans-serif; }
   <script>
   function makeBold() {
     // Your code goes here.
+    var boldParagraph = document.querySelector("#make-me-bold");
+
+    boldParagraph.setAttribute("font-weight", ".bold");
   }
+
   </script>
 </div>
 </body></html>
