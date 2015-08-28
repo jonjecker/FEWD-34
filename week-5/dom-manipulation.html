@@ -1,8 +1,9 @@
 
 <!-- saved from url=(0058)http://avandamiri.com/fewd-34/week-5/dom-manipulation.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
-body { font-family: sans-serif;
+body { font-family: cursive;
         background-color: azure;
+        color: red;
       }
 .set { border: 1px solid #ccc; padding: 0 2em; border-radius: 5px; margin-bottom: 2em; }
 #image { border: 5px dotted #ccc; border-radius: 10px; padding: 10px; margin-bottom: 1em; }
@@ -71,14 +72,10 @@ body { font-family: sans-serif;
     var imageHeight = prompt("Please enter image height");
     var imageLocation = document.querySelector("#image");
     var imageAdd = document.createElement("img");
-
-
     imageAdd.setAttribute("src", imageSource);
     imageAdd.setAttribute("height",imageHeight);
     imageAdd.setAttribute("width",imageWidth);
     imageLocation.appendChild(imageAdd);
-
-
   }
   </script>
 </div>
