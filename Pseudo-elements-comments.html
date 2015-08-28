@@ -1,0 +1,40 @@
+<div class="comment">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="comment">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="comment">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+
+<style>
+
+  .comment {
+    position: relative;
+    background-color: rgba(43, 103, 235, 0.29);
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: .5em;
+  }
+  .comment::after {
+    position: absolute;
+    content:"";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+    border-top-color: rgba(43, 103, 235, 0.29);
+    bottom:-2em;
+  }
+
+/*Media Queries get really interesting... you can resize elements when a screen size passes some sort of size*/
+
+@media (max-width: 500px) {
+  body{
+    font-size: 12px;
+  }
+}
+
+</style>
