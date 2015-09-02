@@ -115,8 +115,9 @@
       function getLikes() {
         debugger
         var likeCount = document.querySelector(".like-count").textContent;
-        var likeNumber = parseInt(likeCount) + 1;
-        likeCount.value = likeNumber;
+        var likeNumber = parseInt(likeCount);
+        var newNumber = likeNumber + 1;
+        likeCount = newNumber;
       };
       // When you click the like button
 
