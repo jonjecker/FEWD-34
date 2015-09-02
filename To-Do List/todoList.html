@@ -1,7 +1,7 @@
 
 <form id="new-todo-item-form">
   <input type="text" id="new-todo-item-input" placeholder="What do you need to do?">
-  <button type="button">Create todo</button>
+  <button type="submit">Create todo</button>
 </form>
 
 <hr>
@@ -18,10 +18,12 @@ var button = document.querySelector("button");
 
 button.addEventListener("click", additem);
 
-function additem() {
-  var newItem = document.createElement("li")
+function additem(event) {
+  event.preventDefault();
+  var newItem = document.createElement("li");
   newItem.textContent = todoItem.value;
   list.appendChild(newItem);
+  todoItem.value = "";
 }
 
 </script>

@@ -1,7 +1,7 @@
 <script>
   // JS Recipes
 
-  // Adding/changing an element's value
+// Adding/changing an element's value
 
   // If the element is already on the page
   var el = document.querySelector("img");
@@ -11,7 +11,18 @@
   var el = document.createElement("img");
   el.setAttribute("src","http://example.com/logo.png");
 
+// Adding/ changing an element's textContent
+
+  //If the element is already on the page:
+  var el = document.querySelector("p");
+  el.textContent= "the quick brown fox...";
+
+  // If the element is NOT on the page (new el):
+  var el = document.createElement("p");
+  el.textContent = "The quick brown fox...";
+
   // Adding an element to the page with text content
+
   var name = "li";
   var text = "Go grocery shopping";
   var parent = "ul"
