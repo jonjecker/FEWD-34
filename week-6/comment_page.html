@@ -114,10 +114,10 @@
 
       function getLikes() {
         debugger
-        var likeCount = document.querySelector(".like-count").textContent;
-        var likeNumber = parseInt(likeCount);
+        var likeCount = document.querySelector(".like-count");
+        var likeNumber = parseInt(likeCount.textContent);
         var newNumber = likeNumber + 1;
-        likeCount = newNumber;
+        likeCount.textContent = newNumber;
       };
       // When you click the like button
 
@@ -135,6 +135,7 @@
 
       //
       // comment field
+      
       // Take the input in the comment field form
       // when the button submits the form
       // take the value of the textarea
