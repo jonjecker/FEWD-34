@@ -113,7 +113,6 @@
       likeLink.addEventListener("click", getLikes);
 
       function getLikes() {
-        debugger
         var likeCount = document.querySelector(".like-count");
         var likeNumber = parseInt(likeCount.textContent);
         var newNumber = likeNumber + 1;
@@ -138,10 +137,13 @@
 
       // Take the input in the comment field form
       var commentInput = document.querySelector(".new-comment-body").textContent;
-      var button = document.querySelector("button")
-
       // when the button submits the form
+      var button = document.querySelector("button");
+      button.addEventListener("click", addComment);
       // take the value of the textarea
+      function addComment(){
+
+      };
       // set it to the text content of the new area
       // once it is createded, append it to the new comment area
       //
