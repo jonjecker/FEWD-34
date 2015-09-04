@@ -136,17 +136,25 @@
       // comment field
 
       // Take the input in the comment field form
-      var commentInput = document.querySelector(".new-comment-body").textContent;
+      var commentForm = document.querySelector("#new-comment");
+      var contentInput = document.querySelector("#new-comment-body");
       // when the button submits the form
       var button = document.querySelector("button");
       button.addEventListener("click", addComment);
-      // take the value of the textarea
-      function addComment(){
 
-      };
+      function addComment(event){
+      event.preventDefault();
+      // take the value of the textarea
       // set it to the text content of the new area
+      var newText = contentInput;
+      var commentBelow = document.createElement("textarea");
+      commentBelow.textContent = newText.value;
       // once it is createded, append it to the new comment area
-      //
+      // commentForm.appendChild(newArea);
+      commentForm.appendChild(commentBelow);
+      newText.value= ""
+                  };
+
       // **When you click button you will need to do an event.preventDefault()
     </script>
   </body>
