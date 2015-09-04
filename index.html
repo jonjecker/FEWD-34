@@ -4,10 +4,21 @@
     <meta charset="utf-8">
     <title>Jon's Page</title>
     <style>
+     .face {
+       box-shadow: 0px 2px 6px rgba(0,0,0,0.9);
+     }
+     a {
+       color:inherit;
+     }
       html {
         background-image: url(images/E30toFreedom.jpg);
         background-size: 1270px;
         background-repeat: no-repeat;
+        text-shadow: 0px 2px 6px rgba(0,0,0,0.9);
+        /*font-weight: lighter;*/
+        color: white;
+        font-size: 27px;
+        font-size: 125%;
       }
       body {
         font-family: "Helvetica Neue",helvetica, sans-serif;
@@ -18,10 +29,11 @@
         margin-right: auto;
         overflow: auto;
         line-height: 60px;
-        background-color: rgba(255, 255, 255, 0.5);
+        /*background-color: rgba(255, 255, 255, 0.5);*/
         border-radius: 8px;
         border-style:hidden;
-
+        padding-bottom: 13px;
+        padding-right: 10px;
       }
       img {
         float:right;
@@ -38,8 +50,9 @@
         border-radius: 8px;
         padding: 10px;
         margin-top: 30px;
+        font-weight: bold;
         /*margin-bottom: 60px;*/
-        background-color: rgba(255, 255, 255, 0.5);;
+        /*background-color: rgba(255, 255, 255, 0.5);;*/
       }
       footer {
         position: absolute;
@@ -59,7 +72,7 @@
   </head>
   <body>
       <header>
-          <img src="images/jonjecker.jpeg" alt="My Face!" width="100" height="100" />
+          <img class="face" src="images/jonjecker.jpeg" alt="My Face!" width="100" height="100" />
           <h1>  Jonathan Jecker </h1>
       </header>
       <main>
