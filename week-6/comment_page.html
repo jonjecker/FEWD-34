@@ -147,11 +147,12 @@
       // take the value of the textarea
       // set it to the text content of the new area
       var newText = contentInput;
-      var commentBelow = document.createElement("textarea");
+      var commentBelow = document.createElement("div");
       commentBelow.textContent = newText.value;
+      commentBelow.setAttribute("class","comment")
       // once it is createded, append it to the new comment area
-      // commentForm.appendChild(newArea);
-      commentForm.appendChild(commentBelow);
+      var commentDiv = document.querySelector("#comments")
+      commentDiv.appendChild(commentBelow);
       newText.value= ""
                   };
 
