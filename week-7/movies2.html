@@ -22,8 +22,18 @@ var sampleResult = {
   ]
 }
 
+var ul = $("ul")
+$("button").on("click", addMovie);
+function addMovie(event) {
+                    event.preventDefault();
+                    $("<li>").text(sampleResult.Search[0].Title).addClass("movie").appendTo("ul");
+                    }
+
+
 // Your code here!
 </script>
+
+
 
 <style>
   * { box-sizing: border-box; }
