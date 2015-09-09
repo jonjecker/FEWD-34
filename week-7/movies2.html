@@ -22,12 +22,14 @@ var sampleResult = {
   ]
 }
 
-var ul = $("ul")
+// var ul = $("#movie-list");
 $("button").on("click", addMovie);
 function addMovie(event) {
                     event.preventDefault();
-                    $("<li>").text(sampleResult.Search[0].Title).addClass("movie").appendTo("ul");
-                    }
+                    $("<li>").text(sampleResult.Search[0].Title)
+                             .addClass("movie")
+                             .appendTo("#movie-list");
+                           }
 
 
 // Your code here!
