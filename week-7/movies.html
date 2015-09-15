@@ -71,6 +71,22 @@
     ];
 
     // Your code goes here.
+
+    var button = document.querySelector("#list-movies");
+    var list = document.querySelector("#movies");
+
+    function allMovies(){
+      movies.forEach(showMovies);
+    };
+
+    function showMovies(movie){
+      var movieInfo = document.createElement("li");
+      movieInfo.textContent = movies.value;
+      list.appendChild = movieInfo;
+    };
+
+    button.addEventListener("click", allMovies);
+
     </script>
   </body>
 </html>

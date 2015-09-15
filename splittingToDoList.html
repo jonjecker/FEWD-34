@@ -21,7 +21,6 @@ function createItem(todo) {
 }
 
 function formSubmitted(event) {
-  debugger
   event.preventDefault();
   var todos = input.value.split(",");
   todos.forEach(createItem);
