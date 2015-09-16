@@ -72,20 +72,29 @@
 
     // Your code goes here.
 
-    var button = document.getElementById("#list-movies");
-    var list = document.querySelector("#movies");
-
-    function allMovies(){
-      console.log('hi');
-      movies.forEach(showMovies);
-    };
+    var button = document.querySelector("#list-movies");
 
     function showMovies(movie){
+      var list = document.querySelector("#movies");
       var movieInfo = document.createElement("li");
-      movieInfo.textContent = movies.value;
-      list.appendChild = movieInfo;
+      var movieTitle = document.createElement("div");
+      var movieImg = document.createElement("img")
+      var movieRelease = document.createElement("div")
+      movieTitle.textContent = movie.title;
+      movieRelease.textContent = movie.releaseDate;
+      movieImg.setAttribute("src", movie.image);
+      movieInfo.classList.add("movie");
+      movieTitle.classList.add("movie-title");
+      movieRelease.classList.add("movie-release-date");
+      list.appendChild(movieInfo);
+      movieInfo.appendChild(movieImg);
+      movieInfo.appendChild(movieTitle);
+      movieInfo.appendChild(movieRelease);
     };
 
+    function allMovies(){
+          movies.forEach(showMovies);
+        };
     button.addEventListener("click", allMovies);
 
     </script>
