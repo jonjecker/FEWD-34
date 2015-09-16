@@ -43,11 +43,11 @@
     <button id="list-movies">listMovies()</button>
 
     <ul id="movies">
-      <!--li class="movie">
+      <!-- <li class="movie">
         <img src="http://ia.media-imdb.com/images/M/MV5BMjMxMTQ3MzMwMV5BMl5BanBnXkFtZTgwNTYxNzYxMTE@._V1_SY317_CR0,0,214,317_AL_.jpg">
         <div class="movie-title">Cool Runnings</div>
         <div class="movie-release-date">1993</div>
-      </li-->
+      </li> -->
     </ul>
 
     <script>
@@ -72,10 +72,11 @@
 
     // Your code goes here.
 
-    var button = document.querySelector("#list-movies");
+    var button = document.getElementById("#list-movies");
     var list = document.querySelector("#movies");
 
     function allMovies(){
+      console.log('hi');
       movies.forEach(showMovies);
     };
 
