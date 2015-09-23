@@ -4,7 +4,7 @@ var numbers = [509, 707, 490, 866, 826, 924, 949, 530, 915, 890,
                925, 878, 925, 731, 898, 410, 117,  83, 306, 909,
                217, 479, 316, 809, 204, 212, 699, 233, 109, 874];
 
- 
+
 var a = 0;
 var b = 0;
 var c = 0;
@@ -13,16 +13,41 @@ var e = 0;
 
 
 // 1. Set var a to the sum of all numbers in the array
-
+    numbers.forEach(function(number){
+    a = a + number;
+    });
 
 // 2. Set var b to the count of numbers greater than or equal to 500
 
-
+    numbers.forEach(function(number){
+    if(number > 500)
+    console.log(b)
+    b = b + number;
+    })
 // 3. Set var c to the count of numbers greater than 250 and less than 750
 
+    numbers.forEach(function(number){
+      if(number > 250 && number < 750){
+      console.log(c)
+      c = c + number;}
+    })
 
 // 4. Bonus: set var d to the largest number in the array
 
+    numbers.forEach(function(number){
+      if(number > d) {
+        d = number;
+      }
+      })
+
 
 // 5. Bonus: set var e to the count of all even numbers
+
+  numbers.forEach(function(number){
+  if((number % 2 == 0) ) {
+    e = e + number;
+  }
+  })
+
+
 </script>
