@@ -1,35 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <!-- <link rel="stylesheet" href="bootstrap-theme.css" media="all" title="no title" charset="utf-8"> -->
+      <link rel="stylesheet" href="bootstrap-theme.css" media="all" title="no title" charset="utf-8">
       <style>
       body {
         font-family: "Helvetica Neue",helvetica, sans-serif;
         background: url(../images/techifybackground.jpeg) no-repeat center center;
         background-size: cover;
         background-position: inherit;
+        text-shadow: 0px 2px 6px rgba(0,0,0,0.9);
+        color: white;
       }
-      </style>
+      header {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        line-height: 60px;
+        border-radius: 8px;
+        border-style: hidden;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        }
+        main {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 500px;
+          border-width: thin;
+          border-color: #ccc;
+          border-style: hidden;
+          position: relative;
+          border-radius: 8px;
+          padding: 10px;
+          margin-top: 30px;
+          font-weight: bold;
+          background-color: rgba(0 , 0, 0, 0.2);
+        }
+        footer {
+          position: absolute;
+          color: white;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+          font-size: 25px;
+          text-align: center;
+        }
+        button {
+          position: center;
+        }
 
-</body>
-</html>
-    <meta charset="utf-8">
-    <title></title>
+      </style>
+    <title>De-Techify</title>
   </head>
   <body>
-    <p id="demo">
-        The tech evangalist took the stage to introduce a game changing new software that would bring a revolutionary new twist to cloud communications. What he introduced to the crowd that day was a game changer in every way. It was innovative, it was fresh, it was nothing short of the future of CRMs and SaaS.
-    </p>
+  <header>
+    <h1>
+      De-Techify
+    </h1>
     <p>
-        Watching him speak was like watching Steve Jobs in his prime. The mood in the room was electric. He was a Growth Hacker in every way.
+      The best way to cut through all that Silicon Valley blabber.
+    </p>
+  </header>
+  <main>
+    <p id="demo">
+        The tech evangalist took the stage to introduce a game changing new software that would bring a revolutionary new twist to cloud communications. What he introduced to the crowd that day was a game changer in every way. It was innovative, it was fresh, it was nothing short of the future of CRMs and SaaS. Watching him speak was like watching Steve Jobs in his prime. The mood in the room was electric. He was a Growth Hacker in every way.
     </p>
 
     <h1>Want to de-techify?</h1>
 
-    <p>
+    <h1>
       Click below to try it out.
-    </p>
-
+    </h1>
+        <button type="button" class="btn btn-warning">
         <a href= "javascript:(function() {
           var s = document.createElement('script');
           s.type = 'text/javascript';
@@ -38,11 +84,11 @@
           })();" >
           Geekify
         </a>
-
-    <p>
+        </button>
+    <h1>
       Drag the link to your bookmarks bar to take it out into the real world
-    </p>
-
+    </h1>
+  </main>
 
   </body>
 </html>

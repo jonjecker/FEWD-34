@@ -1,153 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <!-- <link rel="stylesheet" href="bootstrap-theme.css" media="all" title="no title" charset="utf-8"> -->
+      <link rel="stylesheet" href="bootstrap-theme.css" media="all" title="no title" charset="utf-8">
       <style>
       body {
         font-family: "Helvetica Neue",helvetica, sans-serif;
         background: url(../images/techifybackground.jpeg) no-repeat center center;
         background-size: cover;
         background-position: inherit;
+        text-shadow: 0px 2px 6px rgba(0,0,0,0.9);
+        color: white;
       }
+      header {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: auto;
+        line-height: 60px;
+        border-radius: 8px;
+        border-style: hidden;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        }
+        main {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 650px;
+          border-width: thin;
+          border-color: #ccc;
+          border-style: hidden;
+          position: relative;
+          border-radius: 8px;
+          padding: 10px;
+          margin-top: 30px;
+          font-weight: bold;
+          background-color: rgba(0 , 0, 0, 0.2);
+        }
+        footer {
+          position: absolute;
+          color: white;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+          font-size: 25px;
+          text-align: center;
+          margin: 2px;
+        }
+        h2{
+          font-size: 18px;
+          text-align: center;
+          margin: 2px;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          text-align: center;
+          margin: 0px auto;
+          border-radius: 5%;
+          padding: 15px;
+          background-color: rgba(255, 194, 48, 0.99);
+          text-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+        }
+
       </style>
-
-      <script>
-      function myFunction() {
-
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Cloud/g, "<span style = 'color:red; font-weight: bold'> Privacy-free </span>");
-          document.querySelector("p").innerHTML = res;
-
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/cloud/g, "<span style = 'color:red; font-weight: bold'> privacy-free </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Software/g, "<span style = 'color:red; font-weight: bold'> Something that runs on your computer </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/software/g, "<span style = 'color:red; font-weight: bold'> something that runs on your computer </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Evangalist/g, "<span style = 'color:red; font-weight: bold'> Tech geek who talks too much </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/evangalist/g, "<span style = 'color:red; font-weight: bold'> tech geek who talks too much </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Disruptive/g, "<span style = 'color:red; font-weight: bold'> Midly interesting </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/disruptive/g, "<span style = 'color:red; font-weight: bold'> mildly interesting </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Revolutionary/g, "<span style = 'color:red; font-weight: bold'> Kinda new </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/revolutionary/g, "<span style = 'color:red; font-weight: bold'> kinda new </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Game/g, "<span style = 'color:red; font-weight: bold'> Niche </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/game/g, "<span style = 'color:red; font-weight: bold'> niche </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Changer/g, "<span style = 'color:red; font-weight: bold'> Exploiter </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/changer/g, "<span style = 'color:red; font-weight: bold'> exploiter </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Changing/g, "<span style = 'color:red; font-weight: bold'> Exploiting </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/changing/g, "<span style = 'color:red; font-weight: bold'> exploiting </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Innovative/g, "<span style = 'color:red; font-weight: bold'> A riff on something someone did before </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/innovative/g, "<span style = 'color:red; font-weight: bold'> a riff on something someone did before </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Fresh/g, "<span style = 'color:red; font-weight: bold'> Figuratively, not physically fresh </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/fresh/g, "<span style = 'color:red; font-weight: bold'> figuratively, not physically fresh </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/SaaS/g, "<span style = 'color:red; font-weight: bold'> a product you have to pay for over and over </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/CRM/g, "<span style = 'color:red; font-weight: bold'> a computer thing you won't understand unless you're in sales </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/CRMs/g, "<span style = 'color:red; font-weight: bold'> computer things you won't understand unless you're in sales </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/Steve Jobs/g, "<span style = 'color:red; font-weight: bold'> That one CEO that Ashton Kutcher played </span>");
-          document.querySelector("p").innerHTML = res;
-
-          var str = document.querySelector("p").innerHTML;
-          var res = str.replace(/growth hacker/gi, "<span style = 'color:red; font-weight: bold'> marketer without a budget </span>");
-          document.querySelector("p").innerHTML = res;
-      }
-      </script>
-</body>
-</html>
-    <meta charset="utf-8">
-    <title></title>
+    <title>De-Techify</title>
   </head>
   <body>
+  <header>
+    <div>
+    <h1>
+      De-Techify
+    </h1>
+    <h2>
+      The best way to cut through all that Silicon Valley blabber.
+    </h2>
+  </div>
+  </header>
+  <main>
     <p id="demo">
-        The tech evangalist took the stage to introduce a game changing new software that would bring a revolutionary new twist to cloud communications. What he introduced to the crowd that day was a game changer in every way. It was innovative, it was fresh, it was nothing short of the future of CRMs and SaaS.
-    </p>
-    <p>
-        Watching him speak was like watching Steve Jobs in his prime. The mood in the room was electric. He was a Growth Hacker in every way.
+        He took the stage to introduce a game changing new software that would bring a revolutionary new twist to cloud communications. What he introduced to the crowd that day was a game changer in every way. It was innovative, it was fresh, it was nothing short of the future of CRMs and SaaS. Watching him speak was like watching Steve Jobs in his prime. The mood in the room was electric. He was a Growth Hacker in every way.
     </p>
 
-    <h1>Want to de-techify?</h1>
+    <h1>Want to Un-techify?</h1>
 
-    <button onclick="myFunction()">De-techify</button>
-
-    <h1>Do it yourself</h1>
-
-    <p>
-      Drag this link to your bookmarks bar:
-    </p>
-
-    <a href= "javascript:(function() {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.src = 'https://dl.dropboxusercontent.com/u/25209602/bookmarkletONE.js';
-      document.getElementsByTagName('head')[0].appendChild(s);
-      })();" >
-      Geekify
-    </a>
+    <h2>
+      Click below to try it out.
+    </h2>
+    <br>
+        <a href= "javascript:(function() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.src = 'https://dl.dropboxusercontent.com/u/25209602/bookmarkletONE.js';
+          document.getElementsByTagName('head')[0].appendChild(s);
+          })();" >
+          De-techify
+        </a>
+        <br>
+    <h2>
+      Drag the link to your bookmarks bar to take it out into the real world
+    </h2>
+  </main>
 
   </body>
 </html>
