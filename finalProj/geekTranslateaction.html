@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="bootstrap-theme.css" media="all" title="no title" charset="utf-8">
+      <link rel="stylesheet" href="normalize.css" media="all" title="no title" charset="utf-8">
       <style>
       body {
         font-family: "Helvetica Neue",helvetica, sans-serif;
-        background: url(../images/techifybackground.jpeg) no-repeat center center;
+        background: url(../images/oldwork2.jpg) no-repeat center center;
         background-size: cover;
         background-position: inherit;
-        text-shadow: 0px 2px 6px rgba(0,0,0,0.9);
+        text-shadow: 0px 2px 6px rgba(0,0,0,1);
         color: white;
       }
       header {
-        margin: -15px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.2);
+        border-style: none;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .5);
+
         }
         main {
           margin-left: auto;
           margin-right: auto;
-          max-width: 900px;
+          max-width: 600px;
           border-style: none;
           border-radius: 8px;
           padding: 10px;
           margin-top: 30px;
-          font-weight: bold;
-          background-color: rgba(0 , 0, 0, 0.2);
+          background-color: rgba(0, 0, 0, 0.5);
         }
         footer {
           position: absolute;
-          color: white;
           right: 0;
           bottom: 0;
           left: 0;
           text-align: center;
-          background-color: rgba(0, 0, 0, 0.2);
         }
         h1 {
           font-size: 25px;
@@ -45,7 +48,6 @@
           text-align: center;
         }
         a {
-          margin: 0px, 250px,100px;
           color: white;
           text-decoration: none;
           text-align: center;
@@ -72,16 +74,19 @@
   </div>
   </header>
   <main>
-    <p id="demo">
-        He took the stage to introduce a game changing new software that would bring a revolutionary new twist to cloud communications. What he introduced to the crowd that day was a game changer in every way. It was innovative, it was fresh, it was nothing short of the future of CRMs and SaaS. Watching him speak was like watching Steve Jobs in his prime. The mood in the room was electric. He was a Growth Hacker in every way.
-    </p>
 
-    <h1>Want to Un-techify?</h1>
+    <h1>Want to de-techify your life?</h1>
 
     <h2>
-      Click below to try it out.
+      Click below to try it out
+      <br>
+      OR
+      <br>
+      Drag the button into your bookmarks bar to de-techify the web with just a click.
       <br>
       <br>
+      </h2>
+      <div class="bookmarklet">
         <a href= "javascript:(function() {
           var s = document.createElement('script');
           s.type = 'text/javascript';
@@ -90,10 +95,12 @@
           })();" >
           De-techify
         </a>
+      </div>
         <br>
         <br>
-      Drag the link into your bookmarks bar to take it out into the real world
-    </h2>
+        <p id="demo">
+            He took the stage to introduce a game changing new software that would bring a revolutionary new twist to cloud communications. What he introduced to the crowd that day was a game changer in every way. It was innovative, it was fresh, it was nothing short of the future of CRMs and SaaS. Watching him speak was like watching Steve Jobs in his prime. The mood in the room was electric. He was a Growth Hacker in every way.
+        </p>
 
   </main>
     </body>
